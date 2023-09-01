@@ -1,0 +1,223 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body {
+    background:#c1c09e;
+    background-image:url(img/b.jpg);
+	background-repeat:no-repeat;
+	background-position:0 auto;
+}
+.buttonHolder{ 
+    text-align: left;
+
+ }
+
+#btn01,#btn02{
+    font-family: "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", "細明體", "MingLiU", "標楷體", "DFKai-sb", serif;
+    
+    margin: 5px;
+    display: inline-block;
+    color: #415303;
+    font-weight: bold;
+    border: none;
+    padding: 10px 5px;
+    background-color: #e0990f;
+    font-size: 1.5em;
+}
+#container {
+    text-align: center;
+    margin: 0 auto;
+    /*top:450px;*/
+    
+    width: 30%;
+    -moz-perspective: 600px;
+    -webkit-perspective: 600px;
+}
+/*#container:hover * {
+    -moz-animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+}*/
+#container:active * {
+-moz-animation-duration: 1s;
+-webkit-animation-duration: 1s;
+    -moz-animation-timing-function:linear;
+-webkit-animation-timing-function:linear;
+    -moz-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+	
+}/* 按下自轉 */
+
+
+
+#frame {
+    width: 33px;
+    -moz-transform-style: preserve-3d;
+    /* translate must be last */
+    
+    -webkit-transform-style: preserve-3d;
+    -moz-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(200px,70px, 50px);
+    -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(200px, 70px, 50px);
+}
+.strip {
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-animation: spin 10s infinite linear; /* 動畫速度和運行方式 */
+    -webkit-animation: spin 10s infinite linear;
+}
+
+.strip div {
+    position: absolute;
+    background:url(img/01.jpg);
+    background-repeat: repeat;
+    height:310px;
+    width: 34px;
+    opacity: 100;
+    border-right:none;
+    border-left:none;
+    border-top: 12px double #e89a0c;
+    border-bottom: 12px double #e89a0c;
+}
+
+
+.strip .a {
+    background-position: 0 0;
+    -moz-transform: rotateY(0deg)  translateZ(124px);
+    -webkit-transform: rotateY(0deg)  translateZ(124px);
+}
+.strip .b {
+    background-position: 759px 0;
+    -moz-transform: rotateY(15deg) translateZ(124px);
+    -webkit-transform: rotateY(15deg) rotateX(0deg) translateZ(124px);
+}
+.strip .c  {
+    background-position: 726px 0;
+    -moz-transform: rotateY(30deg)translateZ(124px);
+    -webkit-transform: rotateY(30deg) translateZ(124px);
+}
+.strip .d {
+    background-position: 693px 0;
+    -moz-transform: rotateY(45deg) translateZ(124px);
+    -webkit-transform: rotateY(45deg) translateZ(124px);
+}
+.strip .e {
+    background-position: 660px 0;
+    -moz-transform: rotateY(60deg) translateZ(124px);
+    -webkit-transform: rotateY(60deg) translateZ(124px);
+}
+.strip .f  {
+    background-position: 627px 0;
+    -moz-transform: rotateY(75deg) translateZ(124px);
+    -webkit-transform: rotateY(75deg) translateZ(124px);
+}
+.strip .g {
+    background-position: 594px 0;
+    -moz-transform: rotateY(90deg) translateZ(124px);
+    -webkit-transform: rotateY(90deg) translateZ(124px);
+}
+.strip .h {
+    background-position: 561px 0;
+    -moz-transform: rotateY(105deg) translateZ(124px);
+    -webkit-transform: rotateY(105deg) translateZ(124px);
+}
+.strip .i {
+    background-position: 528px 0;
+    -moz-transform: rotateY(120deg) translateZ(124px);
+    -webkit-transform: rotateY(120deg) translateZ(124px);
+}
+.strip .j {
+    background-position: 495px 0;
+    -moz-transform: rotateY(135deg) translateZ(124px);
+    -webkit-transform: rotateY(135deg) translateZ(124px);
+}
+.strip .k {
+    background-position: 462px 0;
+    -moz-transform: rotateY(150deg) translateZ(124px);
+    -webkit-transform: rotateY(150deg) translateZ(124px);
+}
+.strip .l  {
+    background-position: 429px 0;
+    -moz-transform: rotateY(165deg) translateZ(124px);
+    -webkit-transform: rotateY(165deg) translateZ(124px);
+}
+.strip .m {
+    background-position: 396px 0;
+    -moz-transform: rotateY(180deg) translateZ(124px);
+    -webkit-transform: rotateY(180deg) translateZ(124px);
+}
+.strip .n {
+    background-position: 363px 0;
+    -moz-transform: rotateY(195deg) translateZ(124px);
+    -webkit-transform: rotateY(195deg) translateZ(124px);
+}
+.strip .o  {
+    background-position: 330px 0;
+    -moz-transform: rotateY(210deg) translateZ(124px);
+    -webkit-transform: rotateY(210deg) translateZ(124px);
+}
+.strip .p {
+    background-position: 297px 0;
+    -moz-transform: rotateY(225deg) translateZ(124px);
+    -webkit-transform: rotateY(225deg) translateZ(124px);
+}
+.strip .q  {
+    background-position: 264px 0;
+    -moz-transform: rotateY(240deg) translateZ(124px);
+    -webkit-transform: rotateY(240deg) translateZ(124px);
+}
+.strip .r {
+    background-position: 231px 0;
+    -moz-transform: rotateY(255deg) translateZ(124px);
+    -webkit-transform: rotateY(255deg) translateZ(124px);
+}
+.strip .s  {
+    background-position: 198px 0;
+    -moz-transform: rotateY(270deg) translateZ(124px);
+    -webkit-transform: rotateY(270deg) translateZ(124px);
+}
+.strip .t {
+    background-position: 165px 0;
+    -moz-transform: rotateY(285deg) translateZ(124px);
+    -webkit-transform: rotateY(285deg) translateZ(124px);
+}
+.strip .u {
+    background-position: 132px 0;
+    -moz-transform: rotateY(300deg) translateZ(124px);
+    -webkit-transform: rotateY(300deg) translateZ(124px);
+}
+.strip .v {
+    background-position: 99px 0;
+    -moz-transform: rotateY(315deg) translateZ(124px);
+    -webkit-transform: rotateY(315deg) translateZ(124px);
+}
+.strip .w {
+    background-position: 66px 0;
+    -moz-transform: rotateY(330deg) translateZ(124px);
+    -webkit-transform: rotateY(330deg) translateZ(124px);
+}
+.strip .x {
+    background-position: 33px 0;
+    -moz-transform: rotateY(345deg) translateZ(124px);
+    -webkit-transform: rotateY(345deg) translateZ(124px);
+}
+.strip .y  {
+    background-position: 0px 0;
+    -moz-transform: rotateY(0deg) translateZ(124px);
+    -webkit-transform: rotateY(0deg) translateZ(124px);
+}
+@-moz-keyframes spin {
+    from {
+        -moz-transform: rotateY(0);
+    }
+    to {
+        -moz-transform: rotateY(-360deg);
+    }
+}
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotateY(0);
+    }
+    to {
+        -webkit-transform: rotateY(-360deg);
+    }
+}
